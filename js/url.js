@@ -1,0 +1,16 @@
+const url = new URL(location);
+url.searchParams.delete("edit");
+url.searchParams.delete("login");
+url.searchParams.delete("logout");
+url.searchParams.delete("signup");
+url.searchParams.delete("username");
+url.searchParams.delete("forget");
+url.searchParams.delete("delete");
+url.searchParams.delete("name");
+url.searchParams.delete("password");
+url.searchParams.delete("email");
+url.searchParams.delete("mobile");
+url.searchParams.delete("address");
+url.searchParams.delete("city");
+url.searchParams.delete("view_id");
+history.replaceState(null, null, url);
